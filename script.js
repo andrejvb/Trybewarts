@@ -15,7 +15,12 @@ function verificaLogin() {
 
 button.addEventListener('click', verificaLogin);
 
-checkBox.addEventListener('change', function requiriedCheckBox(){
-  if (checkBox.checked === false) {buttonSubmit.disabled = true  
-  } else {buttonSubmit.disabled = false}
-  })
+function requiriedCheckBox() {
+  if (checkBox.checked === false) {
+    buttonSubmit.disabled = true;
+  } else {
+    buttonSubmit.disabled = false;
+  }
+}
+
+checkBox.addEventListener('change', requiriedCheckBox);

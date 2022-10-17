@@ -39,6 +39,10 @@ h1 {
   background-color: rgb(36, 20, 62);
 }
 
+.btn-primary:disabled {
+  background-color: rgb(152, 117, 209);
+}
+
 main {
   display: flex;
   justify-content: space-around;
@@ -55,8 +59,14 @@ main {
   margin-top: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 10px;
   padding-bottom: 1em;
   border-bottom: 1px solid gray;
+}
+
+.wrapper div {
+  display: flex;
+  gap: 10px;
 }
 
 .form-section {
@@ -70,6 +80,10 @@ main {
   width: 300px;
 }
 
+.column-content label {
+  margin-bottom: 1em;
+}
+
 .column-content div {
   display: block;
 }
@@ -78,13 +92,15 @@ main {
   height: 500px;
 }
 
-#label-rate {
-  display: inline-block;
-}
-
 .flex-form {
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.textarea , #label-infos {
+  margin: 10px 0;
 }
 
 footer {

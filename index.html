@@ -25,19 +25,22 @@
 
   <main>
     <form id="evaluation-form">
+      <!-- primeira parte form -->
       <section class="wrapper">
         <input type="text" id="input-name" class="form-control" placeholder="Nome">
         <input type="text" id="input-lastname" class="form-control" placeholder="Sobrenome">
         <input type="email" name="" id="input-email" class="form-control" placeholder="Email">
-
-        <select name="" id="house" class="form-select">
-          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-          <option id="corvinode-house" value="Corvinode">Corvinode</option>
-          <option id="pytherina-house" value="Pytherina">Pytherina</option>
-        </select>
+        <div>
+          <label for="house">Casa</label>
+          <select name="" id="house" class="form-select">
+            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+        </div>
       </section>
-
+      <!-- segunda parte form -->
       <section class="form-section">
         <div class="column-content">
           <label id="label-family">Qual sua família?</label>
@@ -52,7 +55,6 @@
             <label for="fullstack">Família FullStack</label>
           </div>
         </div>
-
         <div class="column-content">
           <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
 
@@ -76,26 +78,27 @@
         </div>
       </section>
 
-      <div>
-        <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-        <input type="radio" value="1" name="rate">1 
-        <input type="radio" value="2" name="rate">2 
-        <input type="radio" value="3" name="rate">3 
-        <input type="radio" value="4" name="rate">4 
-        <input type="radio" value="5" name="rate">5 
-        <input type="radio" value="6" name="rate">6 
-        <input type="radio" value="7" name="rate">7 
-        <input type="radio" value="8" name="rate">8 
-        <input type="radio" value="9" name="rate">9 
-        <input type="radio" value="10" name="rate">10 
-      </div>
+      <!-- terceira parte form -->
       <section class="flex-form">
+        <div>
+          <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+          <input type="radio" value="1" name="rate">1
+          <input type="radio" value="2" name="rate">2
+          <input type="radio" value="3" name="rate">3
+          <input type="radio" value="4" name="rate">4
+          <input type="radio" value="5" name="rate">5
+          <input type="radio" value="6" name="rate">6
+          <input type="radio" value="7" name="rate">7
+          <input type="radio" value="8" name="rate">8
+          <input type="radio" value="9" name="rate">9
+          <input type="radio" value="10" name="rate">10
+        </div>
         <label class="textarea" for="">Deixe seu comentário:</label>
         <textarea name="" id="" cols="30" rows="10" maxlength="500"></textarea>
-      </section>
-      <section>
-        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
-        <input id="agreement" type="checkbox">
+        <div>
+          <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+          <input id="agreement" type="checkbox">
+        </div>
         <button type="submit" class="btn btn-primary" disabled id="submit-btn">Enviar</button>
       </section>
     </form>
